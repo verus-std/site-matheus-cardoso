@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Matheus Cardoso, corretor de imóveis em Goiânia. Casas, apartamentos e lançamentos em Goiânia e Aparecida de Goiânia para morar ou investir.">
+<meta name="theme-color" content="#f5efe6"><title>Matheus Cardoso | Corretor de imóveis em Goiânia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=13"><script src="properties.js?v=13" defer></script><script src="app.js?v=13" defer></script>
+</head>
+<body>
+<a class="skip" href="#imoveis">Ir para os imóveis</a>
+
+<header class="header">
+  <div class="nav-wrap">
+    <a class="brand" href="#inicio" aria-label="Matheus Cardoso — início"><span class="monogram">MC</span><span class="brand-name">Matheus Cardoso</span></a>
+    <nav id="navigation" aria-label="Menu principal"><a href="#imoveis">Imóveis</a><a href="#como-funciona">Como funciona</a><a href="#lancamentos">Lançamentos</a><a href="#sobre">Sobre mim</a><a href="#duvidas">Dúvidas</a><a class="nav-mobile-cta" href="#contato">Vamos conversar</a></nav>
+    <a class="button button-small nav-contact" href="#contato">Vamos conversar <span aria-hidden="true">→</span></a>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navigation"><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="hero-frame">
+    <img class="hero-image" src="assets/matheus-hero.jpg" alt="Matheus Cardoso, corretor de imóveis" fetchpriority="high">
+    <div class="hero-shade"></div>
+    <div class="hero-content">
+      <span class="tag tag-light"><i></i>Consultor imobiliário em Goiânia</span>
+      <h1>Olá. Meu nome é Matheus Cardoso e posso te ajudar a escolher o seu imóvel.</h1>
+      <p>Casas, apartamentos e lançamentos em Goiânia e Aparecida de Goiânia, para morar ou investir. Vamos encontrar o seu endereço, juntos.</p>
+      <div class="hero-actions"><a class="button button-hero" href="#imoveis">Encontre seu imóvel <span aria-hidden="true">→</span></a><a class="button button-ghost" href="#contato">Vamos conversar</a></div>
+      <ul class="hero-regions" aria-label="Regiões atendidas"><li>Setor Bueno</li><li>Parque Areião</li><li>Jardim Atlântico</li><li>Aparecida de Goiânia</li></ul>
+    </div>
+  </div>
+</section>
+
+<div class="values" aria-label="Valores"><div class="container"><span>Um novo jeito de morar</span><i></i><span>Escolhas com propósito</span><i></i><span>Seu próximo endereço</span><i></i><span>Mais possibilidades</span></div></div>
+
+<section class="section catalog" id="imoveis"><div class="container">
+  <div class="section-head center"><span class="tag"><i></i>Curadoria de imóveis</span><h2>Seu lugar está por aqui.</h2><p>Descubra espaços que combinam com seu momento e com seus planos.</p></div>
+  <div class="catalog-toolbar"><div class="filters" role="group" aria-label="Filtrar por tipo"><button class="active" data-filter="todos" aria-pressed="true">Todos</button><button data-filter="casa" aria-pressed="false">Casas</button><button data-filter="apartamento" aria-pressed="false">Apartamentos</button><button data-filter="lancamento" aria-pressed="false">Lançamentos</button></div><span class="catalog-count" aria-live="polite">06 imóveis selecionados</span></div>
+  <div class="properties" id="property-grid"></div>
+  <div class="catalog-bottom"><p>Não encontrou o que imaginava?</p><a href="#contato" class="button button-outline">Vamos encontrar juntos <span aria-hidden="true">→</span></a></div>
+  <p class="demo-note">Imóveis divulgados no Instagram <a href="https://www.instagram.com/matheuscardoso.imoveis/" target="_blank" rel="noopener noreferrer">@matheuscardoso.imoveis</a>. Valores e disponibilidade sujeitos a confirmação.</p>
+</div></section>
+
+<section class="section steps" id="como-funciona"><div class="container steps-grid">
+  <div class="steps-copy">
+    <span class="tag"><i></i>Como funciona</span>
+    <h2>Do primeiro papo à chave na mão.</h2>
+    <div class="steps-list">
+      <details open><summary>1. Uma boa conversa<span></span></summary><p>Antes de falar de metros quadrados, vamos falar sobre você: seus planos, sua rotina e o que não pode faltar no próximo lar.</p></details>
+      <details><summary>2. Uma seleção com sentido<span></span></summary><p>Com base no que você procura, organizamos uma curadoria de imóveis alinhada ao seu momento e ao seu orçamento.</p></details>
+      <details><summary>3. Visitas sem pressa<span></span></summary><p>Você conhece os imóveis com calma, tira dúvidas e compara as opções com clareza.</p></details>
+      <details><summary>4. O próximo passo<span></span></summary><p>Quando a escolha estiver feita, seguimos juntos nas etapas de proposta, documentação e fechamento.</p></details>
+    </div>
+  </div>
+  <div class="steps-photo"><img src="assets/casa-piscina.jpg" alt="Casa com área de lazer e piscina" loading="lazy"></div>
+</div></section>
+
+<section class="section launch" id="lancamentos"><div class="container"><div class="launch-box">
+  <div class="launch-content"><span class="tag tag-dark"><i></i>Novas possibilidades</span><h2>O seu futuro merece um novo endereço.</h2><p>Conheça a seleção de lançamentos e imagine a vida que você quer construir. Novos espaços, novas perspectivas e um mundo de possibilidades.</p><button class="button button-light" id="see-launches">Explorar lançamentos <span aria-hidden="true">→</span></button><p class="launch-detail">Planeje hoje. <strong>Viva o seu amanhã.</strong></p></div>
+  <div class="launch-photo"><img src="assets/lancamento.jpg" alt="Ambiente integrado com acabamentos naturais e design contemporâneo" loading="lazy"></div>
+</div></div></section>
+
+<section class="section about" id="sobre"><div class="container about-grid">
+  <div class="about-photo"><img src="assets/matheus-hero.jpg" alt="Matheus Cardoso, consultor imobiliário em Goiânia" loading="lazy"></div>
+  <div class="about-copy">
+    <span class="tag"><i></i>Prazer, Matheus Cardoso</span>
+    <h2>Uma boa escolha começa com uma boa conversa.</h2>
+    <p>Antes de falar sobre metros quadrados, vamos falar sobre você e os seus planos.</p>
+    <ol class="principles">
+      <li><span>01</span>Escuta de verdade</li>
+      <li><span>02</span>Clareza em cada etapa</li>
+      <li><span>03</span>Seu momento em primeiro lugar</li>
+    </ol>
+    <a class="button" href="https://www.instagram.com/matheuscardoso.imoveis/" target="_blank" rel="noopener noreferrer">Me acompanhe no Instagram <span aria-hidden="true">→</span></a>
+  </div>
+</div></section>
+
+<section class="section faq" id="duvidas"><div class="container faq-wrap">
+  <div class="section-head center"><span class="tag"><i></i>Pode perguntar</span><h2>Um próximo passo.<br>Menos dúvidas.</h2></div>
+  <div class="faq-list">
+    <details open><summary>Como encontro o imóvel ideal para mim?<span></span></summary><p>O primeiro passo é uma conversa sobre o que você procura: tipo de imóvel, região, orçamento e prioridades. A partir disso, podemos organizar uma seleção que faça sentido para o seu momento.</p></details>
+    <details><summary>Posso agendar uma visita?<span></span></summary><p>Sim. Escolha um imóvel no catálogo e use o botão de contato para conversar com Matheus sobre a disponibilidade e combinar uma visita.</p></details>
+    <details><summary>Como saber se posso financiar?<span></span></summary><p>As condições dependem da análise da instituição financeira, da sua renda e do imóvel escolhido. Converse com Matheus para entender os próximos passos e os documentos necessários para uma simulação.</p></details>
+    <details><summary>Também posso buscar um imóvel na planta?<span></span></summary><p>Sim. A seção de lançamentos apresenta esse tipo de oportunidade. Disponibilidade, prazo de entrega e condições precisam ser confirmados diretamente no atendimento.</p></details>
+    <details><summary>Quero vender meu imóvel. Por onde começo?<span></span></summary><p>Entre em contato com Matheus e apresente as informações do imóvel. Assim, vocês podem conversar sobre a avaliação, a documentação e as possibilidades de divulgação.</p></details>
+  </div>
+  <p class="faq-more">Ainda tem uma pergunta? <a href="https://wa.me/5562999502794?text=Ol%C3%A1%2C%20Matheus!%20Tenho%20uma%20d%C3%BAvida%20sobre%20im%C3%B3veis." target="_blank" rel="noopener noreferrer">Fale comigo no WhatsApp →</a></p>
+</div></section>
+
+<section class="contact" id="contato"><div class="container"><div class="contact-box">
+  <img src="assets/casa-contemporanea.jpg" alt="" loading="lazy"><div class="contact-shade"></div>
+  <div class="contact-inner"><span class="tag tag-light"><i></i>Vamos dar o próximo passo?</span><h2>A sua próxima história já tem um começo.</h2><p>Me conte o que você procura. Vamos descobrir as possibilidades.</p><a class="button button-light" href="https://wa.me/5562999502794?text=Ol%C3%A1%2C%20Matheus!%20Vim%20pelo%20site%20e%20gostaria%20de%20ajuda%20para%20encontrar%20um%20im%C3%B3vel." target="_blank" rel="noopener noreferrer">Chamar no WhatsApp <span aria-hidden="true">→</span></a><a class="instagram-handle" href="https://www.instagram.com/matheuscardoso.imoveis/" target="_blank" rel="noopener noreferrer">@matheuscardoso.imoveis</a></div>
+</div></div></section>
+</main>
+
+<footer><div class="container">
+  <div class="footer-main">
+    <div class="footer-brand"><a class="brand" href="#inicio"><span class="monogram">MC</span><span class="brand-name">Matheus Cardoso</span></a><p>Seu lugar. Seus planos. Sua próxima história.</p></div>
+    <div class="footer-col"><h4>Navegue</h4><a href="#imoveis">Imóveis</a><a href="#como-funciona">Como funciona</a><a href="#lancamentos">Lançamentos</a><a href="#sobre">Sobre mim</a><a href="#duvidas">Dúvidas</a></div>
+    <div class="footer-col"><h4>Imóveis</h4><a href="#imoveis">Casas</a><a href="#imoveis">Apartamentos</a><a href="#lancamentos">Lançamentos</a></div>
+    <div class="footer-col"><h4>Contato</h4><a href="https://wa.me/5562999502794?text=Ol%C3%A1%2C%20Matheus!%20Vim%20pelo%20site%20e%20gostaria%20de%20ajuda%20para%20encontrar%20um%20im%C3%B3vel." target="_blank" rel="noopener noreferrer">WhatsApp (62) 99950-2794</a><a href="https://www.instagram.com/matheuscardoso.imoveis/" target="_blank" rel="noopener noreferrer">Instagram</a><a href="#inicio">Voltar ao início ↑</a></div>
+  </div>
+  <div class="footer-bottom"><span>© <span id="year">2026</span> Matheus Cardoso. Todos os direitos reservados.</span><span>Corretor de imóveis · Goiânia</span></div>
+</div></footer>
+
+</body></html>
